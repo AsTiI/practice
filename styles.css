@@ -1,0 +1,450 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    user-select: none;
+}
+.container {
+    background-color: #0D0F23;
+    display: flex;
+    /* height: 100vh; */
+}
+
+.sideNav {
+    background-color: #111536;
+    flex: 0 0 72px;
+}
+
+.main {  
+    flex: 1 2 500px;
+}
+
+.sideBar {
+    background-color: #111536;
+    flex: 0 0 368px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 65px;
+    gap: 25px;
+}
+
+.menu i {
+    color: #898CAF;
+    font-size: 24px;
+}
+
+.menu i:hover {
+    color: red;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    padding: 80px 80px 120px 53px;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid #28007A;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 200px;
+    background: linear-gradient(162.34deg, #161A42 22.61%, rgba(22, 26, 66, 0) 118.29%);
+}
+
+.bannerTextInfo {
+    padding: 32px;
+}
+
+.bannerTextInfo h2 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    color: white;
+}
+
+.bannerTextInfo p {
+    font-weight: thin;
+    font-size: 14px;
+    line-height: 24px;
+    color: #6C71AD;
+}
+
+.bannerBtns {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    color: white;
+    border-radius: 24px;
+    border: none;
+    outline: none;
+    user-select: none
+}
+
+.redBtn {
+    background-color: #FA1F60;
+}
+
+.emptyBtn {
+    border: 2px solid white;
+    background-color: rgba(0,0,0,0);
+}
+
+.redBtn, .emptyBtn {
+    padding: 10px 40px;
+}
+
+.emptyBtn:hover {
+    border-color: #FA1F60;
+    color: #FA1F60;
+}
+
+.topSellers {
+    display: flex;
+    flex-direction: column;
+    margin-top: 27px;
+    /* gap: 10px; */
+}
+
+.topSellers h3 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
+    color: #FFFFFF;
+    
+}
+
+.sellers {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    color: white;
+    padding: 10px 0;
+}
+
+.sellers::-webkit-scrollbar {
+    border-radius: 20px;
+    height: 4px;
+}
+
+.sellers::-webkit-scrollbar-track {
+    background: rgba(161, 157, 159, 0.23);
+} 
+
+.sellers::-webkit-scrollbar-thumb {
+   
+    background: rgba(250, 31, 96, 1);
+} 
+
+.seller {
+    display: flex;
+    flex: 0 0 196px;
+    flex-direction: row;
+    align-items: center ;
+    gap: 15px;
+}
+
+.seller img {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+}
+
+.sellterText {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    height: 100%;
+}
+
+.sellerText .name {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.sellerText h4 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+}
+
+.sellerText span {
+    position: relative;
+}
+
+.sellerText span::after {
+    position: absolute;
+    top: 0;
+    right: -25px;
+    content: url(./img/galochka.svg);
+    /* margin-left: 5px;
+    margin-top: 10px; */
+}
+
+.sellerText p {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    color: #787878;
+}
+
+
+.myProjects {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 34px;
+}
+
+.myProjectsHeaderContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.myProjectsHeaderContainer h3 {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.myProjectsHeaderContainer a {
+    margin-right: 48px;
+    color: #A2A6D0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+
+}
+
+.myProjectsHeaderContainer a span {
+    position: relative;
+}
+
+.myProjectsHeaderContainer a span::after {
+    content: url("./img/rArrow.png");
+    position: absolute;
+    top: -5px;
+    right: -30px;
+}
+
+.myProjectsContentContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 36px;
+}
+
+.card {
+    background-color: #1B214F;
+    color: #A2A6D0;
+    padding: 12px;
+    border-radius: 16px;
+}
+
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.cardImage {
+    position: relative;
+}
+
+.cardImage img {
+    width: 240px;
+    border-radius: 8px;
+}
+
+.cardImage .avatar {
+    position: absolute;
+    right: 12px;
+    bottom: -12px;
+}
+
+.cardImage .avatar img {
+    width: 40px;
+}
+
+.cardContainer h4 {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-top: 14px;
+}
+.cardDateContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 18px;
+}
+.cardDateContainer p {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.projectsBtn {
+    padding: 4px 33px 4px 43px;
+}
+
+.sideBar {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 27px 0;
+}
+
+.profile {
+    border-bottom: 1px solid rgba(198, 199, 202, 0.2);
+    padding-bottom: 27px;
+}
+
+.profile .profileImage img {
+    width: 31px;
+    border-radius: 50%;
+}
+
+.profile .profileName {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20.83px;
+    letter-spacing: -0.02em;
+    color: rgba(255, 255, 255, 1);
+}
+
+.profileContainer {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 9px;
+    margin-left: 18px;
+}
+
+.detail {
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+}
+
+.detailHeaderContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+}
+
+.detailHeaderContainer h3 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23.44px;
+}
+
+.detailImage {
+    text-align: center;
+}
+
+.detailImage img {
+    width: 263px;
+    border-radius: 12px;
+    margin-top: 46px;
+}
+
+.coursesContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutContainer {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.coursesContainer {
+    display: flex;
+    margin-top: 65px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20.83px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.coursesContainer .experience {
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15.62px;
+    color: rgba(118, 119, 124, 1);
+
+}
+
+.teacher {
+    margin-top: 25px;
+}
+
+.teacherContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+}
+
+.teacherContentConteiner {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 12px;
+}
+
+.teacherContentConteiner img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+
+.teacherBtn {
+    padding: 4px 10px;
+    color: WHITE;
+} 
+
+.description h2 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26.04px;
+    color: rgba(255, 255, 255, 1);
+    margin-top: 36px;
+}
+
+.description p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(130, 130, 130, 1);
+    margin-top: 12px;
+
+}
+
+.descriptionBtnContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.descriptionBtn {
+    padding: 15px 90px 15px 90px;
+    margin-top: 39px;
+    text-align: center;
+    width: 250px;
+}
+
+
